@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = "Product Catalog"
+authors = ["Anton Ivanov"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.75.2"
+pydantic = "^1.9.0"
+alembic = "^1.7.7"
+uvicorn = "^0.17.6"
+httpx = "0.21.3"
+asyncpg =  "^0.25.0"
+loguru = "^0.6.0"
+pytest = "^7.1.2"
+punq = "^0.6.2"
+SQLAlchemy-Utils = "^0.38.2"
+python-dotenv = "^0.20.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
