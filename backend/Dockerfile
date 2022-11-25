@@ -14,8 +14,11 @@ WORKDIR /backend
 
 COPY --from=requirements-stage /tmp/requirements.txt /backend/requirements.txt
 
+RUN pip install --no-cache-dir psycopg2-binary==2.9.3 `# проблемы с установкой через poetry на apple silicon`
 RUN pip install --no-cache-dir --upgrade -r /backend/requirements.txt
 
 COPY . /backend
-
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["uvicorn", "application.web.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]

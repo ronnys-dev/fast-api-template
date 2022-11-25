@@ -3,7 +3,7 @@ from functools import lru_cache
 import punq  # type: ignore
 from common.config import AppConfig, DatabaseConfig
 from domain.base import UseCaseMeta
-from domain.product.repos import IProductRepo
+from domain.product.interfaces import IProductRepo
 from repository.database.database import DatabaseResource
 from repository.product.product_db_repo import ProductDBRepo
 

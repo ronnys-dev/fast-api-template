@@ -1,13 +1,13 @@
 from typing import List
 
-from application.common.container import get_container
+from common.container import get_container
 from application.web.product.schemas import (
     ProductCreate,
     ProductResponse,
     ProductUpdate,
 )
 from domain.product import use_cases
-from domain.product.repos import Product
+from domain.product.interfaces import Product
 from fastapi import APIRouter, Depends, status
 from punq import Container  # type: ignore
 from starlette.responses import Response

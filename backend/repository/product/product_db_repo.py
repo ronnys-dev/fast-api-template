@@ -1,7 +1,7 @@
 from typing import List
 
 from domain.product.exceptions import ProductDoesNotExist
-from domain.product.repos import IProductRepo, Product
+from domain.product.interfaces import IProductRepo, Product
 from sqlalchemy import Column, Float, Integer, String, select
 from sqlalchemy.ext.asyncio.session import AsyncSession
 

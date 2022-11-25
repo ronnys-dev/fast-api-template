@@ -268,6 +268,14 @@ dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
+name = "psycopg2"
+version = "2.9.5"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "punq"
 version = "0.6.2"
 description = "An IOC Container for Python 3.6+"
@@ -489,7 +497,7 @@ dev = ["pytest (>=4.6.2)", "black (>=19.3b0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "dc7c4671ec9a1bb8c19f52845612998ae608738fed05bf6b2ff69d962c006c00"
+content-hash = "b77c7cc8c156988f98bc978ec6769d7084e15bca6d4ea1e621942fb491742afd"
 
 [metadata.files]
 alembic = [
@@ -695,6 +703,7 @@ pluggy = [
     {file = "pluggy-1.0.0-py2.py3-none-any.whl", hash = "sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3"},
     {file = "pluggy-1.0.0.tar.gz", hash = "sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159"},
 ]
+psycopg2 = []
 punq = [
     {file = "punq-0.6.2-py3-none-any.whl", hash = "sha256:8d365bdc01038897dfcc0c9bf63bc8910a95afc46e5e427c2a7abbda7144502b"},
     {file = "punq-0.6.2.tar.gz", hash = "sha256:4d824c92ca640feefb080c1ecdd034e37f79833b3cb88dacac38ed7e048f4dca"},

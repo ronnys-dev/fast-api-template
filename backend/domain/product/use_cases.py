@@ -1,7 +1,7 @@
 from typing import List
 
 from domain.base import UseCaseMeta
-from domain.product.repos import IProductRepo, Product
+from domain.product.interfaces import IProductRepo, Product
 
 
 class CreateProductUseCase(metaclass=UseCaseMeta):
