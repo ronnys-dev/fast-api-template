@@ -20,5 +20,4 @@ RUN pip install --no-cache-dir --upgrade -r /backend/requirements.txt
 COPY . /backend
 COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["uvicorn", "application.web.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
+ENTRYPOINT ["./entrypoint.sh"]
