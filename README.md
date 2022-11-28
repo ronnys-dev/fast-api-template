@@ -1,4 +1,4 @@
-Fast Api Clean Arch Template
+# Fast Api Clean Architecture Template
 
 ### Локальный запуск:
 
