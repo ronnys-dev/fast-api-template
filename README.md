@@ -4,7 +4,7 @@
 
 Обычный запуск:
 - <code>pre-commit install</code>
-- <code>pip install mypy</code> (установить расширение для PyCharm, запуск через <code>make beauty</code>)
+- <code>pip install mypy</code>
 - cd backend
 - <code>poetry install</code>
 - <code>poetry shell</code>
@@ -20,7 +20,7 @@
 Запуск с docker-compose:
 - запускаем из корня
 - <code>docker-compose up --build</code>
-- http://localhost:8000/api/healt_hcheck
+- http://localhost:8000/api/health_check
 - пересобираем без кэша при необходимости <code>docker-compose build --no-cache</code>
 
 ### pre-commit:
